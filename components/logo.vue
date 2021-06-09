@@ -1,10 +1,7 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.76 470.76">
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.76 470.76">
     <defs>
       <style>
-        .cls-1 {
-          fill: #939292;
-        }
         .cls-2 {
           fill: #fcfcfc;
         }
@@ -51,12 +48,15 @@ export default {
   beforeUpdate() {},
   updated() {},
   beforDestroy() {},
-  destroy() {}
+  destroy() {},
 };
 </script>
 
-<style scoped>
-svg {
-  height: 100px;
+<style lang="scss" scoped>
+.logo {
+  height: 50px;
+  .cls-1 {
+    fill: #939292;
+  }
 }
 </style>

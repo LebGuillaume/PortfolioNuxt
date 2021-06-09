@@ -3,11 +3,11 @@
     <Header />
 
     <Hero />
-    <LargeCardDisplay
+    <!-- <LargeCardDisplay
       v-for="cardInfo in LargeCardInfo"
       :key="cardInfo.id"
       :cardSection="cardInfo"
-    />
+    /> -->
   </div>
 </template>
 
@@ -15,6 +15,7 @@
 import { LargeCardSections } from "@/assets/data.js";
 export default {
   data() {
+    transition: "home";
     return {
       LargeCardInfo: LargeCardSections,
     };
@@ -37,5 +38,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
+}
+.home-enter-active,
+.home-leave-active {
+  transition: opacity 0.5s;
+}
+.home-enter,
+.home-leave-active {
+  opacity: 0;
 }
 </style>

@@ -1,7 +1,7 @@
 export const LargeCardSections = [
   {
     id: 1,
-    title: "Portfolio",
+    // title: "Portfolio",
     snippet:
       "Vous trouverez ici mes principales réalisations, effectué au cours de ma formation ainsi que dans le milieu professionel",
     cards: [

@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#"> <Logo></Logo> </b-navbar-brand>
+      <b-navbar-brand to="/"> <Logo></Logo> </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -9,10 +9,9 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
-            <b-nav-item href="#">About</b-nav-item>
-            <b-nav-item href="#">Portfolio</b-nav-item>
-            <b-nav-item href="#">Bio</b-nav-item>
-            <b-nav-item href="#">Contact</b-nav-item>
+            <b-nav-item to="projects">Portfolio</b-nav-item>
+            <b-nav-item to="Bio">Bio</b-nav-item>
+            <b-nav-item to="contact">Contact</b-nav-item>
           </b-navbar-nav>
         </b-navbar-nav>
       </b-collapse>
@@ -26,7 +25,7 @@ export default {
   name: "name",
   mixins: [],
   components: {
-    Logo
+    Logo,
   },
   data() {
     return {};
@@ -43,7 +42,7 @@ export default {
   beforeUpdate() {},
   updated() {},
   beforDestroy() {},
-  destroy() {}
+  destroy() {},
 };
 </script>
 
