@@ -1,5 +1,5 @@
 export const state = () => ({
-  products: [
+  projects: [
     {
       id: 1,
       title: "Dry Powder Extinguisher",
@@ -7,7 +7,8 @@ export const state = () => ({
         "Special access, beach, its perks, and a remote top-tier service beauty of at restaurants beyond the throughout the weekends go city.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!",
-      image: "friterie.jpg"
+      image: "friterie.jpg",
+      link: "https://sad-thompson-c3fc54.netlify.app/"
     },
     {
       id: 2,
@@ -16,7 +17,8 @@ export const state = () => ({
         "Special access, beach, its perks, and a remote top-tier service beauty of at restaurants beyond the throughout the weekends go city.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!",
-      image: "hubsant.resp.jpg"
+      image: "hubsant.resp.jpg",
+      link: "https://sap-hdf.fr/"
     },
     {
       id: 3,
@@ -25,7 +27,8 @@ export const state = () => ({
         "Special access, beach, its perks, and a remote top-tier service beauty of at restaurants beyond the throughout the weekends go city.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!",
-      image: "nike.jpg"
+      image: "nike.jpg",
+      link: "https://sad-thompson-c3fc54.netlify.app/"
     },
     {
       id: 4,
@@ -34,7 +37,8 @@ export const state = () => ({
         "Special access, beach, its perks, and a remote top-tier service beauty of at restaurants beyond the throughout the weekends go city.",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis omnis blanditiis eos, vitae accusamus rem eveniet veritatis voluptas expedita exercitationem at enim perspiciatis alias culpa sint sapiente! Omnis debitis velit nesciunt ratione alias eius officia nobis illum tempora et est iusto maiores possimus, ad aperiam necessitatibus voluptas quis quod, ab soluta sequi voluptate quibusdam. Reiciendis saepe iusto id totam!",
-      image: "friterie.jpg"
+      image: "friterie.jpg",
+      link: "https://sad-thompson-c3fc54.netlify.app/"
     },
     {
       id: 5,
@@ -221,6 +225,6 @@ export const state = () => ({
 
 export const getters = {
   getProductId: state => id => {
-    return state.products.find(product => product.id == id);
+    return state.projects.find(projet => projet.id == id);
   }
 };

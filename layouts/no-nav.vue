@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <Header></Header>
+  <div class="container no-nav">
+    <nuxt-link to="/projects">Go back</nuxt-link>
     <Nuxt />
   </div>
 </template>
 
 <style>
+.no-nav {
+  padding: 5rem 0;
+}
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@1,500&display=swap");
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

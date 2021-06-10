@@ -156,7 +156,7 @@ export default {
   align-items: flex-start;
   justify-content: space-between;
   overflow: hidden;
-  height: 90vh;
+  height: 91.75vh;
   align-items: center;
   a {
     color: black !important;

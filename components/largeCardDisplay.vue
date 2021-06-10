@@ -22,4 +22,9 @@ export default {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 990px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
 </style>

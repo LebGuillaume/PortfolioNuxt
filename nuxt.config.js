@@ -4,14 +4,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "portfolio",
+    title: "Guillaume Lebegue | Développeur front-end Junior à Lille",
     htmlAttrs: {
       lang: "en"
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Développeur Front-end junior à Lille, Guillaume Lebegue, réalise tous types de projet web (site vitrine, Wordpress, e-commerce) pour des clients du monde entier."
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },

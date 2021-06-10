@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Header />
-
     <Hero />
     <!-- <LargeCardDisplay
       v-for="cardInfo in LargeCardInfo"

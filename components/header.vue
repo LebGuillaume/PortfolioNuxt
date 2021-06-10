@@ -10,7 +10,7 @@
         <b-navbar-nav class="ml-auto">
           <b-navbar-nav>
             <b-nav-item to="projects">Portfolio</b-nav-item>
-            <b-nav-item to="Bio">Bio</b-nav-item>
+            <b-nav-item to="bio">Bio</b-nav-item>
             <b-nav-item to="contact">Contact</b-nav-item>
           </b-navbar-nav>
         </b-navbar-nav>

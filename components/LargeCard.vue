@@ -9,7 +9,6 @@
       {{ card.title }}
     </h3>
     <p class="snippet">{{ card.snippet }}</p>
-    <a :href="card.link">Voir le site</a>
   </NuxtLink>
 </template>
 
@@ -39,5 +38,17 @@ export default {
 }
 .snippet {
   color: grey;
+}
+@media (max-width: 990px) {
+  .card {
+    width: 100%;
+    height: 39rem;
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    width: 100%;
+    height: 30em;
+  }
 }
 </style>

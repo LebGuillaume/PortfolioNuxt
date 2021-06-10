@@ -1,51 +1,66 @@
 <template>
-  <div v-if="product" class="container py-5">
-    <div class="hero-container">
-      <img :src="require(`@/assets/img/${product.image}`)" alt="" class="image" />
-      <div class="info-box">
-        <h1>{{ product.title }}</h1>
-        <p class="snippet">{{ product.snippet }}</p>
+  <div>
+    <div v-if="projet" class="container py-5">
+      <div class="hero-container">
+        <img :src="require(`@/assets/img/${projet.image}`)" alt="" class="image" />
+        <div class="info-box">
+          <h1>{{ projet.title }}</h1>
+          <p class="snippet">{{ projet.snippet }}</p>
+          <a v-if="projet.link" :href="projet.link">Voir le site</a>
+        </div>
+      </div>
+      <div class="whats-included-container">
+        <div class="included-container">
+          <h6>Super Effective</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+          </p>
+        </div>
+        <div class="included-container">
+          <h6>Clean & Tidy</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+          </p>
+        </div>
+        <div class="included-container">
+          <h6>Cancel Anytime</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+          </p>
+        </div>
+        <div class="included-container">
+          <h6>Satisfaction Guaranteed</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
+          </p>
+        </div>
+      </div>
+      <div class="description-container">
+        <p>
+          {{ projet.description }}
+        </p>
       </div>
     </div>
-    <div class="whats-included-container">
-      <div class="included-container">
-        <h6>Super Effective</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
-        </p>
-      </div>
-      <div class="included-container">
-        <h6>Clean & Tidy</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
-        </p>
-      </div>
-      <div class="included-container">
-        <h6>Cancel Anytime</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
-        </p>
-      </div>
-      <div class="included-container">
-        <h6>Satisfaction Guaranteed</h6>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolorem.
-        </p>
-      </div>
-    </div>
-    <div class="description-container">
-      <p>
-        {{ product.description }}
-      </p>
-    </div>
+    <div v-else class="container padding">Page not found</div>
   </div>
-  <div v-else class="container padding">Page not found</div>
 </template>
 
 <script>
 export default {
+  head: {
+    title: "Titre item",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Portfolio regroupant mes projets de webdesign, d'intégration et de développement front",
+      },
+    ],
+  },
+  layout: "no-nav",
   computed: {
-    product() {
+    projet() {
       return this.$store.getters.getProductId(this.$route.params.id);
     },
   },
