@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="`/products/${card.id}`" class="card">
+  <NuxtLink :to="`/projects/${card.id}`" class="card">
     <img
       :src="require(`@/assets/img/${card.image || 'friterie.jpg'}`)"
       alt="image site de friterie"

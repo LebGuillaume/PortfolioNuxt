@@ -6,7 +6,7 @@ export const LargeCardSections = [
       "Vous trouverez ici mes principales réalisations, effectué au cours de ma formation ainsi que dans le milieu professionel",
     cards: [
       {
-        id: 19,
+        id: 1,
         title: "Toronto's Portable 2L Fire Extinguisher",
         snippet:
           "This fire extinguisher saved homes from completely burning down. People that used it only had 98% of their homes burned down.",
@@ -14,7 +14,7 @@ export const LargeCardSections = [
         link: "https://sad-thompson-c3fc54.netlify.app/"
       },
       {
-        id: 20,
+        id: 2,
         title: "Empty Super Red Fire Extinguisher",
         snippet:
           "This is one of the most red fire extinguishers you will ever see. Super clean. It's pretty much useless otherwise.",
@@ -22,7 +22,7 @@ export const LargeCardSections = [
         link: "https://sap-hdf.fr/"
       },
       {
-        id: 21,
+        id: 3,
         title: "Fire Extinguisher, Perfect for Pools",
         snippet:
           "If you ever find that your pool is on fire then this is the fire extinguisher for you. It has a 100% success rate.",

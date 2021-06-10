@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar id="header" toggleable="lg" type="dark" variant="dark">
       <b-navbar-brand to="/"> <Logo></Logo> </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -18,7 +18,7 @@
     </b-navbar>
   </div>
 </template>
-
+<script src="../assets/js/Hero.js"></script>
 <script>
 import Logo from "../components/logo";
 export default {

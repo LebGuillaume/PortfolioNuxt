@@ -13,7 +13,6 @@
           <button class="button">Découvrir mon travail</button>
         </NuxtLink>
       </div>
-
       <img src="~assets/img/illustrationsvg.png" alt="" />
     </div>
     <div class="wrap">
@@ -142,7 +141,11 @@
 
 <script>
 import { mapState } from "vuex";
-export default {};
+export default {
+  computed: {
+    ...mapState(["data1", "data3"]),
+  },
+};
 </script>
 
 <style lang="scss" scoped>
